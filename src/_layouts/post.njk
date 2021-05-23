@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+---
+<div class="row">
+  <div class="column">
+    <span class="article-date">{{ page.date | readableDate }}</span>
+    <h3 class="article-title">
+      <a href="{{ url | url }}">{{ title }}</a>
+    </h3>
+    {{ content | safe }}
+    <div class="article-actions">
+      <a href="/">Go back</a>
+    </div>
+  </div>
+</div>

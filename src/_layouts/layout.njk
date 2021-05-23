@@ -1,0 +1,57 @@
+---
+title: Road Heads | drivin' and campin'
+description: Just some city folk driving across the country camping and crying.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['KoHo', 'Pattaya']
+        }
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description or renderData.description }}" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="{{ title or renderData.title or metadata.title }}" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:description" content="{{description or renderData.description}}" />
+    <meta property="og:image" content="{{ '/img/logo.png' | url }}" />
+    <meta property="og:type" content="article" />
+    <link rel="canonical" href="{{ page.url }}" />
+    <link rel="stylesheet" href="{{ '/css/milligram.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicon/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon/favicon-16x16.png' | url }}">
+    <link rel="manifest" href="{{ '/img/favicon/site.webmanifest' | url }}">
+    <link rel="mask-icon" href="{{ '/img/favicon/safari-pinned-tab.svg' | url }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>{{ title }}</title>
+    <!-- Panelbear Analytics - We respect your privacy -->
+    {# <script async src="https://cdn.panelbear.com/analytics.js?site=3eJLZ3UrT5q"></script> #}
+    {# <script>
+        window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+        panelbear('config', { site: '3eJLZ3UrT5q' });
+    </script> #}
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        <a href="/">Road Heads</a>
+      </h1>
+    </header>
+    {% include 'navigation.njk' %}
+    <div class="container">
+      {{ content | safe }}
+    </div>
+    <footer></footer>
+  </body>
+</html>

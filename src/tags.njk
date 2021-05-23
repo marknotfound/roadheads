@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+{% set postList = collections[ tag ] %}
+{% set maxPosts = postList.length %}
+<div class="row">
+  <div class="column column-75">
+    <h5>Posts tagged with <strong>{{ tag }}</strong></h5>
+    {% include 'post-list.njk' %}
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{
+  "name": "roadheads",
+  "version": "1.0.0",
+  "description": "Drivin' cross the country",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy"
+  },
+  "author": "mark evans <mark@meltdownlabs.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "date-fns": "^2.21.1",
+    "date-fns-tz": "^1.1.4",
+    "markdown-it": "^12.0.6"
+  }
+}

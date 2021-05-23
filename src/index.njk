@@ -1,0 +1,10 @@
+---
+layout: layout.njk
+---
+{% set maxPosts = collections.posts.length %}
+<div class="row">
+  <div class="column">
+    {% set postList = collections.posts %}
+    {% include 'post-list.njk' %}
+  </div>
+</div>
