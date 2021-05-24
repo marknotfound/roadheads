@@ -1,0 +1,180 @@
+$color-initial: #fff
+$color-body: #606c76
+$color-background: rgb(239, 232, 213)
+$color-primary: rgb(100, 182, 202)
+$color-secondary: rgb(199, 135, 32)
+$color-tertiary: rgb(101, 167, 104)
+$color-quaternary: #d1d1d1,
+$color-quinary: #e1e1e1
+
+@import 'milligram/milligram'
+
+.wf-loading *
+  opacity: 0
+  height: 100%
+  overflow: hidden
+
+.wf-active *,
+.wf-inactive *
+  -webkit-transition: opacity 0.50s ease-out
+  -moz-transition: opacity 0.50s ease-out
+  -o-transition: opacity 0.50s ease-out
+  transition: opacity 0.50s ease-out
+
+body
+  font-family: KoHo, sans-serif
+  font-weight: 400
+  background-color: $color-background
+  margin: 0
+
+ol
+  list-style-type: none
+h1 a
+  text-decoration: none
+h2 a
+  text-decoration: none
+h3 a
+  text-decoration: none
+h4 a
+  text-decoration: none
+h5 a
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+.text-color-primary
+  color: $color-primary
+
+.text-color-secondary
+  color: $color-secondary
+
+.text-color-tertiary
+  color: $color-tertiary
+
+.header
+  padding: 16px
+
+.header h1
+  font-family: Shrikhand, monospace
+  text-align: center
+  margin-bottom: 0
+
+.header a
+  color: $color-secondary
+
+.header a:hover
+  color: #333333
+
+nav
+  display: flex
+  justify-content: center
+
+nav > ul > li
+  display: inline
+  text-align: center
+
+nav > ul > li a
+  font-weight: 600
+  padding: 0 16px
+  display: inline-block
+
+.page-title
+  text-align: center
+
+.article-title
+  color: rgb(100, 182, 202)
+
+.article-date
+  color: #AAAAAA
+  font-weight: 500
+
+.article-list-item-container
+  margin-bottom: 52px
+
+.article-list-actions
+  display: flex
+  justify-content: flex-end
+
+.article-actions
+  display: flex
+  justify-content: center
+
+.avatar-column
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.avatar-container
+  width: 100px
+  height: 100px
+  position: relative
+  overflow: hidden
+  border-radius: 50%
+  margin-bottom: 24px
+
+img.avatar
+  display: inline
+  margin: 0 auto
+  height: 100%
+  width: auto
+
+.avatar-container .description
+  font-size: 0.8em
+  text-align: center
+  width: 85%
+
+.social-container
+  width: 75%
+  display: flex
+  justify-content: space-between
+  text-decoration: none
+
+.social-container a
+  margin-bottom: 16px
+
+.tag-list
+  display: none
+
+.tag-item
+  display: inline
+
+
+.tag-item a
+  text-decoration: none
+  border: 1px solid #AAAAAA
+  border-radius: 2px
+  padding: 0 8px
+
+/* .tag-item a:hover { background-color: rgb(101, 167, 104) */
+
+img.post-image
+  display: block
+  margin: 0 auto
+  margin-bottom: 24px
+  width: 100%
+
+
+footer
+  height: 200px
+
+@media (min-width: 400px)
+  .social-container
+    width: 65%
+    flex-direction: row
+
+
+@media (min-width: 550px)
+  .social-container
+    width: 100%
+    align-items: center
+    flex-direction: column
+
+  .tag-list
+    display: block
+
+@media (min-width: 1000px)
+  img.post-image
+    width: 75%
+
