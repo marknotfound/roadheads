@@ -3,12 +3,15 @@ const markdownIt = require('markdown-it');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = (eleventyConfig) => {
+  // Settings
+  eleventyConfig.setUseGitIgnore(false);
+
   // Plugins
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // Passthroughs
-  eleventyConfig.addPassthroughCopy('img');
-  eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('src/img');
+  eleventyConfig.addPassthroughCopy('src/css/dist');
 
   // Filters
   eleventyConfig.addFilter('md', (content = "") => {
@@ -43,11 +46,9 @@ module.exports = (eleventyConfig) => {
     excerpt_separator: "<!-- excerpt -->",
   });
 
-  eleventyConfig.addPassthroughCopy('src/img');
   eleventyConfig.setTemplateFormats([
     'md',
     'njk',
-    'css',
   ]);
 
   return {
