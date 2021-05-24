@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: About Road Heads
+title: Gear
 ---
 Non eiusmod ea commodo id excepteur. Voluptate deserunt eu proident id. Duis amet dolore irure veniam ipsum dolor aute magna fugiat velit eiusmod labore. Eu amet ex dolore incididunt dolor excepteur ad reprehenderit sit consequat eu. Duis ullamco consequat reprehenderit ut incididunt ullamco cupidatat Lorem laboris excepteur adipisicing. Laborum ullamco id minim exercitation exercitation occaecat nisi veniam magna.
 
