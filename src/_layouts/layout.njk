@@ -6,6 +6,7 @@ description: Just some city folk driving across the country camping and crying.
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://use.typekit.net/vbs1nhd.css">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
       WebFont.load({
@@ -41,15 +42,14 @@ description: Just some city folk driving across the country camping and crying.
     <title>{{ title }}</title>
   </head>
   <body>
-    <header class="header">
+    <nav>
       <h1>
-        <a href="/"><span class="text-color-primary">Road</span><span class="text-color-tertiary">Heads</span></a>
+        <a href="/">Road Heads</a>
       </h1>
-    </header>
-    {% include 'navigation.njk' %}
-    <div class="container">
-      {{ content | safe }}
-    </div>
+      {% include 'navigation.njk' %}
+    </nav>
+
+    {{ content | safe }}
     <footer></footer>
   </body>
 </html>

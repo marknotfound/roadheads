@@ -8,7 +8,7 @@
     "sass": "sass --style=compressed src/css/index.sass src/css/dist/styles.css",
     "watch:sass": "npm run sass -- --watch",
     "watch:eleventy": "eleventy --serve",
-    "start": "npm-run-all sass --parallel watch:*"
+    "start": "npm run watch:eleventy"
   },
   "author": "mark evans <mark@meltdownlabs.com>",
   "license": "ISC",
